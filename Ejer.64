@@ -231,7 +231,6 @@ def es_primo(numero):
             return False
     return True
 
-resultado = es_primo(7)
 print(resultado)
 print ("\n")
 
@@ -251,84 +250,78 @@ lista2 = [3, 4]
 
 
 
-# 33. Crear una lista de números y usar map para multiplicar cada uno por 2.
 # 33
 numeros = [1, 2, 3, 4, 5]
 resultado = list(map(lambda x: x * 2, numeros))
 print(resultado) 
 
-# 34. Usar filter para obtener solo los números pares de una lista.
+
 # 34
 numeros = [1, 2, 3, 4, 5, 6]
 resultado = list(filter(lambda x: x % 2 == 0, numeros))
 print(resultado)  
 
-# 35  Crear una lista de palabras y usar join para unirlas en una cadena.
-
+# 35 
 palabras = ["Hola", "mundo"]
 resultado = " ".join(palabras)
 print(resultado) 
 
-# 36 Crear una lista de enteros y devolver solo los negativos.
+# 36 
 numeros = [1, -2, 3, -4, 5]
 resultado = [x for x in numeros if x < 0]
 print(resultado)  
 
-# 37  Crear un conjunto de letras y mostrar la unión con otro conjunto.
+# 37  
 conjunto1 = {'a', 'b', 'c'}
 conjunto2 = {'c', 'd', 'e'}
 resultado = conjunto1.union(conjunto2)
 print(resultado)  
 
-# 38  Crear un conjunto de números y calcular la intersección con otro conjunto.
+# 38  
 conjunto1 = {1, 2, 3}
 conjunto2 = {2, 3, 4}
 resultado = conjunto1.intersection(conjunto2)
 print(resultado) 
 
-# 39 Crear un diccionario y usar un bucle para imprimir sus elementos.
+# 39 
 mi_diccionario = {"a": 1, "b": 2}
 for clave, valor in mi_diccionario.items():
     print(f"{clave}: {valor}") 
 
 
-# 40 Crear una función que reciba una cadena y devuelva el número de vocales.
+# 40 
 def contar_vocales(cadena):
     return sum(1 for char in cadena.lower() if char in 'aeiou')
 
 print(contar_vocales("Hola")) 
 
 
-# 41 Crear un programa que genere una lista de números aleatorios.
+# 41 
 import random
 numeros_aleatorios = [random.randint(1, 100) for _ in range(10)]
 print(numeros_aleatorios) 
 
 
-# 42 Crear una lista y ordenar sus elementos. 
+# 42 
 numeros = [5, 3, 1, 4, 2]
 numeros.sort()
 print(numeros)  
 
 
-# 43  Crear un diccionario y verificar si una clave existe.
+# 43  
 mi_diccionario = {"a": 1, "b": 2}
 clave = 'a'
 if clave in mi_diccionario:
     print(f"La clave '{clave}' existe.")  
 
 
-# 44. Crear un bucle que imprima los elementos de una lista en reversa.
-# Resultado: 3, 2, 1
 # 44
 lista = [1, 2, 3]
 for elemento in reversed(lista):
     print(elemento)  
 
 
-# 45. Crear una función que devuelva el factorial de un número.
-# Resultado esperado: factorial(5) devuelve 120.
-
+# 45
 def factorial(n):
     if n == 0:
         return 1
@@ -338,14 +331,13 @@ def factorial(n):
 print(factorial(5)) 
 
 
-# 46. Crear una lista de tuplas y mostrar cada tupla en una línea.
-# Resultado: "1: a", "2: b"
+# 46.
 tuplas = [(1, 'a'), (2, 'b')]
 for t in tuplas:
     print(f"{t[0]}: {t[1]}")  
 
 
-# 47. Crear una lista y usar zip para combinar dos listas en una lista de tuplas.
+# 47. 
 lista1 = [1, 2, 3]
 lista2 = ['a', 'b', 'c']
 # Resultado: [(1, 'a'), (2, 'b'), (3, 'c')]
@@ -357,7 +349,6 @@ resultado = list(zip(lista1, lista2))
 print(resultado) 
 
 # 48
-# 48. Crear una función que reciba un texto y devuelva el texto en mayúsculas.
 # Resultado esperado: convertir_mayusculas("hola") devuelve "HOLA".
 def convertir_mayusculas(texto):
     return texto.upper()
@@ -460,6 +451,3 @@ def duplicados(lista):
     return [x for x in set(lista) if lista.count(x) > 1]
 
 print(duplicados([1, 2, 2, 3]))  
-lista_concatenada = lista1 + lista2
-print(lista_concatenada)
-print ("\n")
